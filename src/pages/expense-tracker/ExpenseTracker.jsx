@@ -75,6 +75,10 @@ const ExpenseTracker = () => {
     });
   }
 
+  if (!isAuth){
+    return <Navigate to='/'/>
+  }
+
 
   return (
     <>
